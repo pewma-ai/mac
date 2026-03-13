@@ -1,6 +1,6 @@
 # Reglas de MaC (Management as Code)
 
-> Este documento define las pautas de gestión para este repositorio. En el caso de agentes IA, las reglas son imperativas y deben seguirse como un "prompt" operativo y ser abiertas cada 30 minutos como máximo.
+> Este documento define las pautas de gestión para este repositorio. En el caso de agentes IA, las reglas son imperativas y deben seguirse como un "prompt" operativo y ser leídas desde [MaC/ritual_de_sesion.md](./ritual_de_sesion.md) cada 30 minutos como máximo.
 
 ---
 
@@ -33,7 +33,7 @@ Al iniciar cualquier sesión, el agente ejecuta estos pasos **en orden y antes d
 1. Crear (o reanudar) el archivo `MaC/sesiones/sesion-YYYY-MM-DD.md` con información mínima (solo la hora de inicio).
 2. Preguntar al **Gerente de Proyecto (USUARIO)** por el objetivo y por qué iniciaron la sesión.
 3. **Esperar** la respuesta del Gerente de Proyecto.
-4. Al recibir los objetivos, el agente revisa `log.md`, `roadmap.md` y las **Deudas abiertas** de la sesión más reciente para contextualizar la solicitud.
+4. Al recibir los objetivos, el agente revisa `MaC/log.md`, `MaC/roadmap.md` y las **Deudas abiertas** de la sesión más reciente para contextualizar la solicitud.
 5. El agente luego propone un desglose de los objetivos en un conjunto de tareas (Checklist) y se lo presenta al Gerente de Proyecto.
 6. Solo después de que el Gerente de Proyecto apruebe la lista de tareas, el agente actualiza el archivo de sesión con los Objetivos y la Checklist.
 
@@ -92,5 +92,6 @@ Se activa **solo cuando el usuario lo indica explícitamente**. Flujo estricto:
    - **Deudas abiertas** — *(siempre al final absoluto, ver paso 4)*.
 3. Se hace a un lado para que el usuario proporcione sus reflexiones. El usuario puede enviar múltiples mensajes. **Confirmar recepción sin tomar medidas** hasta que el usuario devuelva el control.
 4. Al recibir el control, escribir `Reflexiones del PM` y, basándose en todo el contexto, inferir y escribir `Deudas abiertas`.
+5. **Actualizar `MaC/README.md`**: Asegurar que la sección "Última sesión" apunte a la sesión que se acaba de cerrar y rotar las "Sesiones anteriores" para mantener las últimas tres.
 
 > **Tono**: Compacto pero con el desarrollo suficiente para extrapolar ideas sin dificultad.

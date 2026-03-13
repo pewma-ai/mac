@@ -5,7 +5,7 @@
 **Tiempo efectivo**: -- (observado)
 
 ## Objetivo de la Sesión
-<!-- Describir en 1-3 líneas qué se espera lograr. Vincular a la fase del [roadmap](../../roadmap.md) si aplica. -->
+<!-- Describir en 1-3 líneas qué se espera lograr. Vincular a la fase del [roadmap](../roadmap.md) si aplica. -->
 
 
 ## Deudas Abiertas
@@ -24,3 +24,6 @@
 
 ## Introspección de la Sesión
 <!-- Se completa al cierre. El agente genera la estructura base (TL;DR, decisiones, sorpresas, aprendizajes), luego el usuario aporta sus reflexiones, y finalmente se redactan las deudas abiertas. Ver §5 del MaC. -->
+
+## Log de la sesión
+<!-- En esta sección está la lista de tareas realizadas en realidad, cambios de opinión, configuraciones, etc.  -->
