@@ -56,15 +56,20 @@ Utiliza [`MaC/sesiones/sesion-TEMPLATE.md`](MaC/sesiones/sesion-TEMPLATE.md) com
 
 ## §4. Registros Obligatorios
 
-### `log.md`
+### `log.md` — Registro histórico
 
-`log.md` es la memoria a largo plazo del proyecto. Al escribir en él:
+`log.md` es la memoria a largo plazo del proyecto. Alguien que lea solo este archivo debería entender la evolución del proyecto sin abrir ninguna sesión. Al escribir en él:
 
 - Agrupar entradas por fecha: `## YYYY-MM-DD - Título descriptivo`.
-- Describir la **acción y el valor proporcionado**, no el nombre del archivo modificado.
-- Registrar **inmediatamente** después de realizar un cambio significativo; no acumular para el final.
+- Registrar **hitos** (una o dos líneas que describan qué cambió y por qué importa) y **decisiones importantes** (como hechos consumados, sin el contexto operativo).
 - Seguir el tono y formato de las entradas existentes.
 - Tanto el agente como el usuario escriben en el registro. Si el usuario agrega una entrada, no la modifiques.
+
+### `## Log de la sesión` — Registro operativo
+
+El `## Log de la sesión` dentro de cada `sesion-*.md` es el registro detallado de lo que realmente pasó: tareas ejecutadas, cambios de opinión, configuraciones, descubrimientos. Va siempre **al final del archivo de sesión**, después de la Introspección.
+
+- Las **decisiones importantes aparecen en ambos sitios**: en `log.md` como hecho consumado (una línea), y en el log de la sesión con el contexto operativo (por qué, qué alternativas se descartaron).
 
 ### Correcciones y Mejoras
 

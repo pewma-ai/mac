@@ -23,9 +23,7 @@
 - Creación de un catálogo detallado de preguntas por capa y escala en `docs/preguntas-mac.md`.
 - Corrección de consistencia ortográfica en la guía para impacientes y el catálogo de preguntas.
 ## 2026-03-13 - Lanzamiento de MaC v1.0
-- Reorganización estructural del repositorio para el lanzamiento público: consolidación de documentación en `docs/` y centralización de la gestión del proyecto en `MaC/`.
-- Evolución del protocolo operativo: `MaC.md` renace como `ritual_de_sesion.md` con reglas de cierre y actualización de índices.
-- Integración de las Historias MaC (Javiera, Nexo, NovaTech) como guías narrativas de implementación pragmática por escala.
-- Normalización de enlaces Obsidian a rutas relativas compatibles con GitHub para asegurar una navegación fluida en el repositorio.
-- Rediseño del README principal: MaC se presenta como un paradigma de gestión que "se practica, no se instala".
-- Estabilización del workflow de sesiones: creación de plantillas de introspección y log de cambios detallado.
+- Primera versión pública del método. Repositorio reorganizado, historias integradas, documentación estabilizada.
+- **Decisión:** `MaC.md` renombrado a `ritual_de_sesion.md` — el protocolo operativo se separa del concepto.
+- **Decisión:** `log.md` y `roadmap.md` centralizados en `MaC/` — gestión del proyecto separada de la documentación del método.
+- **Decisión:** `log.md` pasa a ser registro histórico de hitos y decisiones. El detalle operativo vive en el log de cada sesión.

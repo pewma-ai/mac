@@ -3,7 +3,7 @@
 MaC es un sistema de gestión basado en documentos y procesos que se basa en el ciclo Acción → Aprendizaje siguiendo una estrategia común.
 
 > [!NOTE]
-> **Este repositorio se gestiona con MaC.** El directorio [`MaC/`](./MaC/) contiene el ritual de sesión, el log y el roadmap que se usaron para construir este proyecto — es un ejemplo vivo del sistema en acción.
+> **Este repositorio se gestiona con MaC.** El directorio [`MaC/`](./MaC/) contiene el ritual de sesión, el log y el roadmap que se usaron para construir este proyecto.
 
 ## ¿Cómo empezar?
 
