@@ -185,9 +185,9 @@ Este archivo define la navegación lateral. Se edita como cualquier Markdown des
   * [Preguntas](preguntas-mac.md)
 
 * **Historias**
-  * [Javiera](../historias/javiera%20-%20relato%20de%20un%20independiente.md)
-  * [Nexo](../historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md)
-  * [NovaTech](../historias/novatech%20-%20relato%20empresa%20mediana.md)
+  * [Javiera](historias/javiera%20-%20relato%20de%20un%20independiente.md)
+  * [Nexo](historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md)
+  * [NovaTech](historias/novatech%20-%20relato%20empresa%20mediana.md)
 ```
 
 > **Nota sobre espacios en nombres de archivo:** Docsify puede fallar con espacios en rutas. Usar `%20` en el `_sidebar.md` es más seguro, aunque los archivos físicos mantengan sus nombres originales.
@@ -212,7 +212,7 @@ La URL resultante será: `https://pewma-ai.github.io/mac`
 
 ```
 Obsidian
-   ↓ edita *.md en /docs/ o /historias/
+   ↓ edita *.md en /docs/ o /docs/historias/
 git push origin main
    ↓ ~30 segundos
 GitHub Pages sirve /docs/ como sitio Docsify
@@ -308,4 +308,4 @@ Agregar después de `search.min.js` según necesidad:
 - **SEO**: Docsify renderiza en el browser (JS requerido). Google indexa eventualmente, pero de forma lenta. No usar si el posicionamiento en buscadores es prioritario.
 - **Sin JS**: el sitio no funciona sin JavaScript habilitado.
 - **Espacios en rutas**: los nombres de archivo con espacios requieren `%20` en los links del `_sidebar.md`.
-- **Archivos fuera de `/docs/`**: Docsify puede referenciarlos con rutas relativas (`../historias/`), pero GitHub Pages solo sirve desde `/docs/`. Los archivos sí son accesibles, pero Docsify los carga vía fetch relativo — funciona si están en el mismo repositorio.
+- **Archivos fuera de `/docs/`**: Docsify puede referenciarlos con rutas relativas (ej. `../otra-carpeta/`), pero GitHub Pages solo sirve desde `/docs/`. Por lo tanto, cualquier contenido que deba verse en la documentación web (como hicimos con `historias/`) debe vivir dentro de `/docs/`.

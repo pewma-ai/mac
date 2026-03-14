@@ -89,4 +89,4 @@ Eso es MaC mínimo. Todo lo demás aparece cuando lo necesitas.
 
 → **[Implementación de MaC](implementacion-mac.md)** — Cómo crecer el sistema según tu escala y situación.
 → **[Método MaC](metodo-mac.md)** — La referencia completa: modelo, procesos, cadencias, preguntas por capa.
-→ **Historias** — Tres ejemplos simulados de implementación por escala: [Javiera](../historias/javiera%20-%20relato%20de%20un%20independiente.md) (1 persona), [Nexo](../historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md) (6 personas), [NovaTech](../historias/novatech%20-%20relato%20empresa%20mediana.md) (80 personas).
+→ **Historias** — Tres ejemplos simulados de implementación por escala: [Javiera](historias/javiera%20-%20relato%20de%20un%20independiente.md) (1 persona), [Nexo](historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md) (6 personas), [NovaTech](historias/novatech%20-%20relato%20empresa%20mediana.md) (80 personas).

@@ -179,9 +179,9 @@ Pero cada proceso tiene partes tediosas y repetitivas que un agente IA puede abs
 
 Tres organizaciones ficticias que ilustran cómo se implementa MaC a escalas distintas. Sus ejemplos cortos están integrados en el documento de [Procesos entre capas](procesos-mac.md); las historias completas están en el directorio `historias/`.
 
-- **[Javiera](../historias/javiera%20-%20relato%20de%20un%20independiente.md)** — Diseñadora freelance (1 persona). Empieza anotando qué pasó. Termina con un sistema que le permite decir que no.
-- **[Nexo](../historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md)** — Consultora de 6 personas. El equipo promete más de lo que puede cumplir. MaC les da visibilidad de capacidad y criterio compartido.
-- **[NovaTech](../historias/novatech%20-%20relato%20empresa%20mediana.md)** — Empresa tech de 80 personas. Un manager implementa MaC como capa sobre JIRA y Sheets. Un año después, la gerencia lo pide para toda la empresa.
+- **[Javiera](historias/javiera%20-%20relato%20de%20un%20independiente.md)** — Diseñadora freelance (1 persona). Empieza anotando qué pasó. Termina con un sistema que le permite decir que no.
+- **[Nexo](historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md)** — Consultora de 6 personas. El equipo promete más de lo que puede cumplir. MaC les da visibilidad de capacidad y criterio compartido.
+- **[NovaTech](historias/novatech%20-%20relato%20empresa%20mediana.md)** — Empresa tech de 80 personas. Un manager implementa MaC como capa sobre JIRA y Sheets. Un año después, la gerencia lo pide para toda la empresa.
 
 ---
 

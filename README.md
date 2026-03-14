@@ -21,9 +21,9 @@ MaC no se instala, se practica. Empieza con la [guía para impacientes](docs/mac
 
 Tres historias simuladas que muestran cómo se implementa MaC a distintas escalas. Funcionan como guía práctica de implementación — cada historia recorre los 8 procesos en el orden en que aparecen naturalmente según el tamaño de la organización.
 
-* **[Javiera](historias/javiera%20-%20relato%20de%20un%20independiente.md)** — Diseñadora freelance (1 persona). Empieza anotando qué pasó. Termina con un sistema que le permite decir que no.
-* **[Nexo](historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md)** — Consultora de 6 personas. El equipo promete más de lo que puede cumplir. MaC les da visibilidad de capacidad y criterio compartido.
-* **[NovaTech](historias/novatech%20-%20relato%20empresa%20mediana.md)** — Empresa tech de 80 personas. Un manager implementa MaC como capa sobre JIRA y Sheets. Un año después, la gerencia lo pide para toda la empresa.
+* **[Javiera](docs/historias/javiera%20-%20relato%20de%20un%20independiente.md)** — Diseñadora freelance (1 persona). Empieza anotando qué pasó. Termina con un sistema que le permite decir que no.
+* **[Nexo](docs/historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md)** — Consultora de 6 personas. El equipo promete más de lo que puede cumplir. MaC les da visibilidad de capacidad y criterio compartido.
+* **[NovaTech](docs/historias/novatech%20-%20relato%20empresa%20mediana.md)** — Empresa tech de 80 personas. Un manager implementa MaC como capa sobre JIRA y Sheets. Un año después, la gerencia lo pide para toda la empresa.
 
 
 ## Desarrollo
