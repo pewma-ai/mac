@@ -13,7 +13,9 @@ Cuando este setup está completo, el repositorio debe tener:
 /docs/
   index.html        ← motor Docsify (único archivo de infraestructura)
   _sidebar.md       ← navegación lateral (editable como cualquier MD)
+  README.md         ← portada del sitio (homepage)
   *.md              ← contenido, sin modificar
+  historias/        ← subdirectorios con contenido adicional
 ```
 
 Y en GitHub → Settings → Pages:
@@ -30,11 +32,12 @@ Un agente puede verificar si el repo está correctamente configurado comprobando
 
 - [ ] Existe `docs/index.html` con `window.$docsify` definido
 - [ ] Existe `docs/_sidebar.md` con al menos una entrada
-- [ ] `docs/index.html` carga Docsify desde CDN (no dependencias locales)
+- [ ] Existe `docs/README.md` como portada del sitio
+- [ ] `docs/index.html` carga docsify-themeable CSS **y** JS desde CDN
 - [ ] Los archivos `.md` referenciados en `_sidebar.md` existen en las rutas indicadas
-- [ ] GitHub Pages está configurado en branch `main`, carpeta `/docs`
-
-Si falta alguno de estos puntos, el sitio no publicará correctamente.
+- [ ] Todo el contenido que debe verse en la web está **dentro** de `/docs/` (no fuera)
+- [ ] `basePath` está configurado si el sitio vive en un subpath (ej. `/mac/`)
+- [ ] GitHub Pages está configurado en el branch y carpeta correctos
 
 ---
 
@@ -53,6 +56,10 @@ Este es el único archivo que no es Markdown. Contiene el motor Docsify y el CSS
   <!-- FUENTES: cambiar aquí para personalizar tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- TEMA BASE: docsify-themeable (las variables CSS lo personalizan) -->
+  <!-- ⚠️ SIN ESTE CSS EL SITIO SE VE COMO HTML CRUDO -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
 
   <style>
     /* ============================================================
@@ -146,16 +153,26 @@ Este es el único archivo que no es Markdown. Contiene el motor Docsify y el CSS
     ============================================================ */
     window.$docsify = {
       name: 'MaC',                              // nombre en sidebar
-      nameLink: '/',                             // link del nombre
+      nameLink: '/mac/#/',                       // ⚠️ debe incluir el subpath
       repo: 'https://github.com/pewma-ai/mac',  // ícono GitHub arriba derecha
+      basePath: '/mac/',                         // ⚠️ necesario en subpaths de GitHub Pages
       loadSidebar: true,                         // usa _sidebar.md
       subMaxLevel: 2,                            // niveles de TOC en sidebar
-      homepage: 'mac-para-impacientes.md',       // página de entrada
+      homepage: 'README.md',                     // página de entrada (portada)
       themeColor: '#a78bfa',                     // color de acento (progress bar)
       notFoundPage: true,                        // página 404 automática
       search: {
         placeholder: 'Buscar...',
         noData: 'Sin resultados.',
+      },
+      pagination: {
+        previousText: 'Anterior',
+        nextText: 'Siguiente',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      mermaid: {
+        theme: 'dark',                           // tema para diagramas Mermaid
       },
     }
   </script>
@@ -166,6 +183,16 @@ Este es el único archivo que no es Markdown. Contiene el motor Docsify y el CSS
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   <!-- Plugin de búsqueda -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+
+  <!-- Mermaid: docsify-mermaid ANTES de mermaid.min.js -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+  <!-- Plugins adicionales -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
 </body>
 </html>
 ```
@@ -174,9 +201,11 @@ Este es el único archivo que no es Markdown. Contiene el motor Docsify y el CSS
 
 ## Archivo 2: `docs/_sidebar.md`
 
-Este archivo define la navegación lateral. Se edita como cualquier Markdown desde Obsidian u otro editor.
+Define la navegación lateral. Se edita como cualquier Markdown.
 
 ```markdown
+* [Inicio](/)
+
 * **Documentos**
   * [Para impacientes](mac-para-impacientes.md)
   * [Implementación](implementacion-mac.md)
@@ -211,19 +240,40 @@ La URL resultante será: `https://pewma-ai.github.io/mac`
 ## Flujo completo
 
 ```
-Obsidian
-   ↓ edita *.md en /docs/ o /docs/historias/
+Obsidian / Editor
+   ↓ edita *.md en /docs/
 git push origin main
    ↓ ~30 segundos
 GitHub Pages sirve /docs/ como sitio Docsify
    ↓ disponible en
 pewma-ai.github.io/mac
-
-Los archivos MD siguen accesibles directamente:
-raw.githubusercontent.com/pewma-ai/mac/main/docs/metodo-mac.md
 ```
 
 Docsify es una capa de lectura sobre los archivos originales. No los modifica ni compila. El repositorio sigue siendo la fuente de verdad.
+
+---
+
+## Lecciones aprendidas (sesión 2026-03-14)
+
+### ⚠️ Sin el CSS de tema, el sitio se ve roto
+
+Docsify-themeable requiere **dos** cosas:
+1. El `<link>` al CSS del tema (ej. `theme-simple-dark.css`) — **sin esto, el sitio es HTML crudo**.
+2. El `<script>` del JS de docsify-themeable — procesa las variables CSS personalizadas.
+
+### ⚠️ Subpath en GitHub Pages rompe sidebar y logo
+
+Si el sitio vive en `org.github.io/<repo>/` (no en la raíz), se necesitan **dos** config:
+- `basePath: '/<repo>/'` — para que Docsify encuentre `_sidebar.md` y los `.md`.
+- `nameLink: '/<repo>/#/'` — para que el logo del sidebar lleve a la portada, no a `org.github.io/`.
+
+### ⚠️ Todo el contenido debe vivir dentro de `/docs/`
+
+GitHub Pages solo sirve archivos desde la carpeta configurada. Archivos fuera de `/docs/` (como estaba `historias/`) no se cargan aunque Docsify intente usar rutas relativas con `../`. La solución fue mover `historias/` a `docs/historias/`.
+
+### Mermaid requiere orden específico de scripts
+
+Orden obligatorio: `docsify-mermaid.min.js` **antes** de `mermaid.min.js`, ambos **después** de `docsify.min.js`.
 
 ---
 
@@ -247,7 +297,7 @@ themeColor: '#TU_COLOR',
 
 ### Cambiar a tema claro
 
-Reemplazar las variables de color base:
+Cambiar el `<link>` de CSS a `theme-simple.css` (sin el `-dark`) y reemplazar las variables de color base:
 
 ```css
 :root {
@@ -285,20 +335,15 @@ Referencia oficial de todas las variables del sistema de temas:
 
 ## Plugins adicionales disponibles
 
-Agregar después de `search.min.js` según necesidad:
+Agregar después de los scripts existentes según necesidad:
 
 ```html
-<!-- Zoom en imágenes al hacer click -->
-<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<!-- Emojis -->
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 
-<!-- Copiar código con un click -->
-<script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
-
-<!-- Paginación anterior/siguiente -->
-<script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-
-<!-- Tabs dentro de documentos -->
-<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+<!-- Resaltado de sintaxis para más lenguajes -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 ```
 
 ---
@@ -308,4 +353,12 @@ Agregar después de `search.min.js` según necesidad:
 - **SEO**: Docsify renderiza en el browser (JS requerido). Google indexa eventualmente, pero de forma lenta. No usar si el posicionamiento en buscadores es prioritario.
 - **Sin JS**: el sitio no funciona sin JavaScript habilitado.
 - **Espacios en rutas**: los nombres de archivo con espacios requieren `%20` en los links del `_sidebar.md`.
-- **Archivos fuera de `/docs/`**: Docsify puede referenciarlos con rutas relativas (ej. `../otra-carpeta/`), pero GitHub Pages solo sirve desde `/docs/`. Por lo tanto, cualquier contenido que deba verse en la documentación web (como hicimos con `historias/`) debe vivir dentro de `/docs/`.
+- **Archivos fuera de `/docs/`**: GitHub Pages **no los sirve**. Todo contenido que deba verse en la web debe vivir dentro de `/docs/`.
+
+---
+
+## Recursos
+
+- Docsify: https://docsify.js.org
+- Docsify-themeable: https://jhildenbiddle.github.io/docsify-themeable
+- Docsify-mermaid: https://github.com/Leward/mermaid-docsify
