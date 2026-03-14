@@ -1,3 +1,5 @@
+* [Inicio](/)
+
 * **Documentos**
   * [Para impacientes](mac-para-impacientes.md)
   * [Implementación](implementacion-mac.md)
