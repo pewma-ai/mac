@@ -104,8 +104,9 @@
     ============================================================ */
     window.$docsify = {
       name: 'MaC',                              // nombre en sidebar
-      nameLink: '/',                             // link del nombre
+      nameLink: '/mac/#/',                       // link del nombre (subpath GitHub Pages)
       repo: 'https://github.com/pewma-ai/mac',  // ícono GitHub arriba derecha
+      basePath: '/mac/',                         // base para resolver _sidebar.md y *.md
       loadSidebar: true,                         // usa _sidebar.md
       subMaxLevel: 2,                            // niveles de TOC en sidebar
       homepage: 'README.md',                     // página de entrada (portada)
