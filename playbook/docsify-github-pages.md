@@ -33,6 +33,7 @@ Un agente puede verificar si el repo está correctamente configurado comprobando
 - [ ] Existe `docs/index.html` con `window.$docsify` definido
 - [ ] Existe `docs/_sidebar.md` con al menos una entrada
 - [ ] Existe `docs/README.md` como portada del sitio
+- [ ] Existe `docs/.nojekyll` (vacío) para evitar que Jekyll ignore `_sidebar.md`
 - [ ] `docs/index.html` carga docsify-themeable CSS **y** JS desde CDN
 - [ ] Los archivos `.md` referenciados en `_sidebar.md` existen en las rutas indicadas
 - [ ] Todo el contenido que debe verse en la web está **dentro** de `/docs/` (no fuera)
@@ -266,6 +267,11 @@ Docsify-themeable requiere **dos** cosas:
 Si el sitio vive en `org.github.io/<repo>/` (no en la raíz), se necesitan **dos** config:
 - `basePath: '/<repo>/'` — para que Docsify encuentre `_sidebar.md` y los `.md`.
 - `nameLink: '/<repo>/#/'` — para que el logo del sidebar lleve a la portada, no a `org.github.io/`.
+
+### ⚠️ Jekyll ignora archivos con guión bajo (`_sidebar.md`)
+
+Por defecto, GitHub Pages corre Jekyll, el cual ignora automáticamente cualquier archivo o carpeta que empiece con `_`. Si no se desactiva, el `_sidebar.md` nunca se publica y Docsify muestra un sidebar vacío. 
+**Solución**: crear un archivo vacío llamado `.nojekyll` dentro de `/docs/`.
 
 ### ⚠️ Todo el contenido debe vivir dentro de `/docs/`
 
