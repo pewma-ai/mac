@@ -296,7 +296,7 @@ Las políticas son el output estructural del aprendizaje. Mientras las decisione
 
 ---
 
-## Preguntas automatizables
+## Agentes: Preguntas automatizables
 
 Estas preguntas cruzan capas y buscan inconsistencias, vacíos y patrones. Un humano puede responderlas revisando sus documentos; un agente IA puede hacerlo más rápido procesando la documentación existente (logs, planes, identidad, tareas, decisiones, políticas) para preparar las sesiones humanas.
 
