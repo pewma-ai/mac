@@ -27,3 +27,10 @@
 - **Decisión:** `MaC.md` renombrado a `ritual_de_sesion.md` — el protocolo operativo se separa del concepto.
 - **Decisión:** `log.md` y `roadmap.md` centralizados en `MaC/` — gestión del proyecto separada de la documentación del método.
 - **Decisión:** `log.md` pasa a ser registro histórico de hitos y decisiones. El detalle operativo vive en el log de cada sesión.
+
+## 2026-03-14 - Playbook y Docsify
+- Creación del directorio `playbook/` como repositorio de conocimiento operativo del proyecto (4 guías: Docsify, convenciones de documentación, convenciones Git, configuración de agentes).
+- **Decisión:** El playbook vive en la raíz, no dentro de `MaC/` — es conocimiento operativo (capa Capacidad), no gestión (capa Acción).
+- **Decisión:** `AGENTS.md` reemplaza a `.agents/` y `.cursorrules` como fuente de verdad para agentes IA.
+- Sitio web de MaC publicado con Docsify en https://pewma-ai.github.io/mac/ — identidad corporativa PEWMA (Merriweather, terracota `#D35400`, modo claro).
+- Las 3 preguntas abiertas sobre formalización del Playbook en el Método MaC fueron respondidas con la experiencia práctica de esta sesión.

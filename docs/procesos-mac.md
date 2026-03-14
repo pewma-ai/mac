@@ -45,16 +45,16 @@ Cada proceso a continuación incluye ejemplos para tres escalas: una persona, un
 
 **1 persona.** Javiera es diseñadora freelance. Después de un proyecto agotador decide que quiere "crecer" y anota como objetivo conseguir clientes más grandes. Antes de avanzar revisa su Identidad, donde escribió que existe para hacer trabajo con impacto cultural, no volumen. El objetivo queda reformulado: conseguir un cliente del sector cultural con presupuesto suficiente para trabajar sin apuro.
 
-> Ver la [historia completa de Javiera](../historias/javiera%20-%20relato%20de%20un%20independiente.md).
+> Ver la [historia completa de Javiera](historias/javiera%20-%20relato%20de%20un%20independiente.md).
 
 **2–10 personas.** El equipo de una consultora propone como objetivo para el trimestre "entrar al mercado peruano". Alguien trae la Identidad al pizarrón: la organización existe para resolver problemas de gestión pública en Chile, donde conocen el tejido institucional. El objetivo se descarta. En su lugar queda: profundizar en dos regiones chilenas donde aún no tienen presencia.
 
-> Ver la [historia completa de Nexo](../historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md).
+> Ver la [historia completa de Nexo](historias/nexo%20-%20relato%20de%202%20a%2010%20personas.md).
 
 
 **Organización mediana.** El área comercial propone lanzar un producto de consumo masivo porque detectó una oportunidad. El proceso de Enmarcar revela que la Identidad de la empresa está construida sobre servicios B2B de largo plazo. El objetivo no se elimina, pero se deriva a una decisión estratégica formal antes de entrar a planificación.
 
-> Ver la [historia completa de NovaTech](../historias/novatech%20-%20relato%20empresa%20mediana.md).
+> Ver la [historia completa de NovaTech](historias/novatech%20-%20relato%20empresa%20mediana.md).
 
 ## 2. Dimensionar
 *Dirección → Capacidad revisada*
@@ -190,7 +190,7 @@ Cada proceso a continuación incluye ejemplos para tres escalas: una persona, un
 
 ---
 
-→ **[Método MaC](metodo-mac.md)** — El modelo completo, capas, cadencias y MaC Avanzado.
-→ **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
-→ **[Preguntas que responde MaC](preguntas-mac.md)** — Catálogo completo de preguntas por capa y preguntas automatizables.
+- → **[Método MaC](metodo-mac.md)** — El modelo completo, capas, cadencias y MaC Avanzado.
+- → **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
+- → **[Preguntas que responde MaC](preguntas-mac.md)** — Catálogo completo de preguntas por capa y preguntas automatizables.
 

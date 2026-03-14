@@ -58,6 +58,7 @@ La estrategia es lo que permanece estable mientras el ciclo Acción → Aprendiz
 ### Identidad
 
 **Pregunta corta**: _¿Por qué existimos y qué nos diferencia?_
+
 **Pregunta extendida**: _¿Qué nos constituye como organización y qué seguiría siendo verdadero aunque todo lo demás cambiara?_
 
 - ¿Por qué existe esta organización?
@@ -70,6 +71,7 @@ La estrategia es lo que permanece estable mientras el ciclo Acción → Aprendiz
 ### Dirección
 
 **Pregunta corta**: _¿Hacia dónde vamos y cómo sabremos que llegamos?_
+
 **Pregunta extendida**: _¿Qué hemos decidido que debe ser verdad al final de este horizonte, y cómo lo reconoceremos cuando ocurra?_
 
 - ¿Qué queremos lograr y en qué horizonte de tiempo?
@@ -97,6 +99,7 @@ La estrategia es lo que permanece estable mientras el ciclo Acción → Aprendiz
 ### Capacidad
 
 **Pregunta corta**: _¿Con qué contamos realmente?_
+
 **Pregunta extendida**: _¿Cuál es el inventario real de medios, dependencias y restricciones que definen lo que esta organización puede y no puede hacer?_
 
 - ¿Qué recurso, si falla, detiene la operación?
@@ -129,6 +132,7 @@ La acción es donde la estrategia se convierte en realidad. Se descompone en tre
 ### Planificación
 
 **Pregunta corta**: _¿Qué hacer a continuación?_
+
 **Pregunta extendida**: _¿Dado lo que sabemos hoy sobre nuestra dirección, capacidad y aprendizajes recientes, qué es lo más importante que debemos hacer en el próximo ciclo, y qué lo podría impedir?_
 
 - ¿Qué objetivos de Dirección necesitan avance este ciclo?
@@ -159,6 +163,7 @@ La acción es donde la estrategia se convierte en realidad. Se descompone en tre
 ### Tareas
 
 **Pregunta corta**: _¿Qué hacer concretamente?_
+
 **Pregunta extendida**: _¿Qué actividades específicas están asignadas, a quién, con qué plazo, y cuál es su estado actual?_
 
 - ¿Quién está haciendo qué, con qué fecha de compromiso?
@@ -187,6 +192,7 @@ La acción es donde la estrategia se convierte en realidad. Se descompone en tre
 ### Resultados
 
 **Pregunta corta**: _¿Quién ejecutó y qué fue diferente a lo esperado?_
+
 **Pregunta extendida**: _¿Qué ocurrió realmente versus lo que habíamos planificado, y dónde están las sorpresas que merecen atención?_
 
 Los resultados son el puente entre la acción y el aprendizaje. Lo que importa no es solo registrar qué se hizo, sino capturar las diferencias entre lo esperado y lo real: ahí están las sorpresas de las que se aprende.
@@ -222,6 +228,7 @@ El aprendizaje cierra el ciclo. Toma los resultados (especialmente las sorpresas
 ### Decisiones
 
 **Pregunta corta**: _¿Qué decidimos, cuándo y por qué?_
+
 **Pregunta extendida**: _¿Qué razonamiento produjo cada decisión significativa, qué alternativas descartó, y bajo qué condición debería revisarse?_
 
 Las decisiones son el output puntual del aprendizaje. Se registran en el momento de decidir y se consultan en el momento de dudar.
@@ -259,6 +266,7 @@ Las decisiones son el output puntual del aprendizaje. Se registran en el momento
 ### Políticas
 
 **Pregunta corta**: _¿Qué debemos hacer diferente?_
+
 **Pregunta extendida**: _¿Qué reglas, criterios o formas de trabajar hemos adoptado como resultado de lo que aprendimos, y siguen siendo válidas?_
 
 Las políticas son el output estructural del aprendizaje. Mientras las decisiones responden a situaciones puntuales, las políticas codifican patrones: cómo hacemos las cosas aquí.
@@ -288,7 +296,7 @@ Las políticas son el output estructural del aprendizaje. Mientras las decisione
 
 ---
 
-## Preguntas automatizables
+## Agentes: Preguntas automatizables
 
 Estas preguntas cruzan capas y buscan inconsistencias, vacíos y patrones. Un humano puede responderlas revisando sus documentos; un agente IA puede hacerlo más rápido procesando la documentación existente (logs, planes, identidad, tareas, decisiones, políticas) para preparar las sesiones humanas.
 
@@ -347,6 +355,6 @@ Estas preguntas cruzan capas y buscan inconsistencias, vacíos y patrones. Un hu
 
 ---
 
-→ **[Método MaC](metodo-mac.md)** — El modelo completo, procesos, cadencias y preguntas avanzadas por relación.
-→ **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
-→ **[Procesos entre capas](procesos-mac.md)** — Detalle de cada proceso con ejemplos por escala.
+- → **[Método MaC](metodo-mac.md)** — El modelo completo, procesos, cadencias y preguntas avanzadas por relación.
+- → **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
+- → **[Procesos entre capas](procesos-mac.md)** — Detalle de cada proceso con ejemplos por escala.

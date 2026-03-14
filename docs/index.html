@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MaC — Management as Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FUENTES: PEWMA usa Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- TEMA BASE: docsify-themeable (Cambiado a Claro para coincidir con PEWMA) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+
+  <style>
+    /* ============================================================
+       VARIABLES DE TEMA — PEWMA AI CORPORATE IDENTY
+    ============================================================ */
+    :root {
+      /* Tipografía */
+      --base-font-family: 'Merriweather', 'Georgia', serif;
+      --base-font-size: 16px;
+      --base-line-height: 1.8;
+
+      /* Colores base (Extraídos de pewma.ai) */
+      --base-color: #2c3e50;               /* Azul pizarra oscuro para texto principal */
+      --base-background-color: #FDFDFD;    /* Fondo blanco roto */
+      --heading-color: #1a252f;            /* Títulos más oscuros */
+      --heading-font-weight: 700;
+
+      /* Links e Identidad corporativa */
+      --link-color: #D35400;               /* Terracota oscuro (acento corporativo) */
+      --link-color--hover: #e67e22;
+      --link-text-decoration: none;
+
+      /* Sidebar */
+      --sidebar-background: #f4f6f8;
+      --sidebar-border-color: #e2e8f0;
+      --sidebar-width: 260px;
+      --sidebar-color: #596a7b;            /* Gris azulado texto secundario */
+      --sidebar-name-color: #2c3e50;
+      --sidebar-nav-link-color: #596a7b;
+      --sidebar-nav-link-color--active: #2c3e50;
+      --sidebar-nav-link-font-weight--active: 700;
+      --sidebar-nav-link-border-color--active: #D35400;
+
+      /* Código */
+      --code-font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      --code-background: #f1f5f9;
+      --code-color: #D35400;
+      --code-block-border-radius: 6px;
+
+      /* Blockquotes */
+      --blockquote-border-color: #D35400;
+      --blockquote-color: #596a7b;
+
+      /* Tablas */
+      --table-row-odd-background: #f4f6f8;
+      --table-row-even-background: #FDFDFD;
+
+      /* Búsqueda */
+      --search-input-background-color: #ffffff;
+      --search-input-border-color: #e2e8f0;
+      --search-input-color: #2c3e50;
+
+      /* Separadores */
+      --hr-border: 1px solid #e2e8f0;
+    }
+
+    /* ============================================================
+       CSS ADICIONAL — ajustes fuera del sistema de variables
+    ============================================================ */
+    body {
+      font-feature-settings: 'kern', 'liga';
+    }
+
+    .app-name-link {
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    h1, h2, h3 {
+      letter-spacing: -0.01em;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      :root {
+        --base-font-size: 15px;
+        --sidebar-width: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script>
+    /* ============================================================
+       CONFIGURACIÓN DOCSIFY — opciones principales
+       Referencia: https://docsify.js.org/#/configuration
+    ============================================================ */
+    window.$docsify = {
+      name: 'MaC',                              // nombre en sidebar
+      nameLink: '/mac/#/',                       // link del nombre (subpath GitHub Pages)
+      repo: 'https://github.com/pewma-ai/mac',  // ícono GitHub arriba derecha
+      basePath: '/mac/',                         // base para resolver _sidebar.md y *.md
+      loadSidebar: true,                         // usa _sidebar.md
+      subMaxLevel: 2,                            // niveles de TOC en sidebar
+      homepage: 'README.md',                     // página de entrada (portada)
+      themeColor: '#D35400',                     // color de acento corporativo (progress bar)
+      notFoundPage: true,                        // página 404 automática
+      auto2top: true,                            // scroll al inicio al cambiar de página
+      search: {
+        placeholder: 'Buscar...',
+        noData: 'Sin resultados.',
+      },
+      // Paginación sugerida en la best practice document
+      pagination: {
+        previousText: 'Anterior',
+        nextText: 'Siguiente',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      // Mermaid: diagramas renderizados desde bloques ```mermaid
+      mermaid: {
+        theme: 'default',
+      },
+    }
+  </script>
+
+  <!-- ==========================================
+       PLUGINS QUE DEBEN IR ANTES DE DOCSIFY
+       ========================================== -->
+  <!-- Mermaid: docsify-mermaid ANTES de docsify.min.js y docsify-themeable -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: false });</script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.min.js"></script>
+
+  <!-- ==========================================
+       MOTOR CORE DOCSIFY
+       ========================================== -->
+  <!-- Motor de temas (debe ir ANTES de docsify.min.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <!-- Motor Docsify -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- Plugin de búsqueda -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+
+  <!-- Plugins adicionales -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+</body>
+</html>
