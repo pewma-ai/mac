@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MaC — Management as Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FUENTES: cambiar aquí para personalizar tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       VARIABLES DE TEMA — editar esta sección para personalizar
+       Docsify-themeable expone estas variables CSS.
+       Referencia completa: https://jhildenbiddle.github.io/docsify-themeable
+    ============================================================ */
+    :root {
+      /* Tipografía */
+      --base-font-family: 'Inter', -apple-system, sans-serif;
+      --base-font-size: 16px;
+      --base-line-height: 1.75;
+
+      /* Colores base */
+      --base-color: #d4d4d4;               /* texto principal */
+      --base-background-color: #0f0f0f;    /* fondo de contenido */
+      --heading-color: #f0f0f0;            /* títulos */
+      --heading-font-weight: 500;
+
+      /* Links */
+      --link-color: #a78bfa;               /* color de acento — cambiar aquí */
+      --link-color--hover: #c4b5fd;
+      --link-text-decoration: none;
+
+      /* Sidebar */
+      --sidebar-background: #141414;
+      --sidebar-border-color: #262626;
+      --sidebar-width: 260px;
+      --sidebar-color: #a3a3a3;
+      --sidebar-name-color: #f0f0f0;
+      --sidebar-nav-link-color: #a3a3a3;
+      --sidebar-nav-link-color--active: #f0f0f0;
+      --sidebar-nav-link-font-weight--active: 500;
+      --sidebar-nav-link-border-color--active: #a78bfa; /* acento activo */
+
+      /* Código */
+      --code-font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      --code-background: #1a1a1a;
+      --code-color: #c4b5fd;
+      --code-block-border-radius: 6px;
+
+      /* Blockquotes */
+      --blockquote-border-color: #a78bfa;
+      --blockquote-color: #a3a3a3;
+
+      /* Tablas */
+      --table-row-odd-background: #1a1a1a;
+      --table-row-even-background: #141414;
+
+      /* Búsqueda */
+      --search-input-background-color: #1a1a1a;
+      --search-input-border-color: #333;
+      --search-input-color: #d4d4d4;
+
+      /* Separadores */
+      --hr-border: 1px solid #262626;
+    }
+
+    /* ============================================================
+       CSS ADICIONAL — ajustes fuera del sistema de variables
+    ============================================================ */
+    body {
+      font-feature-settings: 'kern', 'liga';
+    }
+
+    .app-name-link {
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    h1, h2, h3 {
+      letter-spacing: -0.01em;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      :root {
+        --base-font-size: 15px;
+        --sidebar-width: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script>
+    /* ============================================================
+       CONFIGURACIÓN DOCSIFY — opciones principales
+       Referencia: https://docsify.js.org/#/configuration
+    ============================================================ */
+    window.$docsify = {
+      name: 'MaC',                              // nombre en sidebar
+      nameLink: '/',                             // link del nombre
+      repo: 'https://github.com/pewma-ai/mac',  // ícono GitHub arriba derecha
+      loadSidebar: true,                         // usa _sidebar.md
+      subMaxLevel: 2,                            // niveles de TOC en sidebar
+      homepage: 'mac-para-impacientes.md',       // página de entrada
+      themeColor: '#a78bfa',                     // color de acento (progress bar)
+      notFoundPage: true,                        // página 404 automática
+      search: {
+        placeholder: 'Buscar...',
+        noData: 'Sin resultados.',
+      },
+      // Paginación sugerida en la best practice document
+      pagination: {
+        previousText: 'Anterior',
+        nextText: 'Siguiente',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+    }
+  </script>
+
+  <!-- Motor de temas (debe ir ANTES de docsify.min.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <!-- Motor Docsify -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- Plugin de búsqueda -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+
+  <!-- Plugins adicionales útiles y recomendados por el user -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+</body>
+</html>

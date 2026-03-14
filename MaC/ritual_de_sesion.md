@@ -48,6 +48,10 @@ Al iniciar cualquier sesión, el agente ejecuta estos pasos **en orden y antes d
 - Si no hay una sesión activa, el agente crea una llamada `MaC/sesiones/sesion-YYYY-MM-DD.md`.
 - Registra en el encabezado de cada sesión el **tiempo cronológico** (inicio, interrupciones, fin) y el **tiempo efectivo** de trabajo. Utiliza el formato de sesiones anteriores como referencia.
 
+### Antes de implementar
+
+Antes de ejecutar un ítem del Plan de Acción, consultar [`playbook/README.md`](../playbook/README.md) para verificar si existe una guía relevante al tema que se va a tocar. Si hay una guía, leerla antes de proceder. Esto aplica tanto para humanos como para agentes IA.
+
 ### Plantilla de Sesión
 
 Utiliza [`MaC/sesiones/sesion-TEMPLATE.md`](MaC/sesiones/sesion-TEMPLATE.md) como base para cada nueva sesión.
@@ -69,6 +73,7 @@ Utiliza [`MaC/sesiones/sesion-TEMPLATE.md`](MaC/sesiones/sesion-TEMPLATE.md) com
 
 El `## Log de la sesión` dentro de cada `sesion-*.md` es el registro detallado de lo que realmente pasó: tareas ejecutadas, cambios de opinión, configuraciones, descubrimientos. Va siempre **al final del archivo de sesión**, después de la Introspección.
 
+- **Se actualiza de forma inmediata**: cada vez que el agente completa una acción relevante (archivo creado, decisión tomada, cambio de rumbo), la registra en el log de la sesión sin esperar al cierre.
 - Las **decisiones importantes aparecen en ambos sitios**: en `log.md` como hecho consumado (una línea), y en el log de la sesión con el contexto operativo (por qué, qué alternativas se descartaron).
 
 ### Correcciones y Mejoras

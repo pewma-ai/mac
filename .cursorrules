@@ -1,7 +1,4 @@
 # Management as Code (MaC) Protocol
 
-At the very beginning of every session/conversation in this repository, you MUST ALWAYS READ the `MaC/ritual_de_sesion.md` file FIRST before executing any other prompts.
-
-1. Do NOT write any code, execute any scripts, or make any changes before reading `MaC/ritual_de_sesion.md`.
-2. Strictly follow the "Modos de Operación" and the "Ritual de Inicio de Sesión" described in `ritual_de_sesion.md`.
-3. Plan and execute your tasks within `MaC/sesiones/sesion-*.md` as instructed.
+Las instrucciones de este repositorio están en AGENTS.md.
+Lee ese archivo antes de hacer cualquier cambio.
