@@ -17,7 +17,7 @@ Al inicio de cada sesión o conversación, leer `MaC/ritual_de_sesion.md` **ante
 ### Preguntar primero
 - Hacer git push.
 - Renombrar o mover archivos.
-- Modificar `MaC/ritual_de_sesion.md` o `AGENTS.md`.
+- Modificar `MaC/ritual_de_sesion.md`, `AGENTS.md` o `.cursorrules`.
 
 ### Nunca hacer
 - Modificar el `LICENSE`.

@@ -7,9 +7,9 @@
 
 ## Commits
 
-- **Idioma:** español.
-- **Formato:** tiempo presente, modo imperativo.
-- **Prefijos opcionales:** `feat:`, `fix:`, `docs:`, `refactor:`, `chore:`.
+- **Prefijos obligatorios (en inglés):** `feat:`, `fix:`, `docs:`, `refactor:`, `chore:`.
+- **Cuerpo del mensaje:** idioma español.
+- **Formato del cuerpo:** tiempo presente, modo imperativo.
 
 Ejemplos:
 ```

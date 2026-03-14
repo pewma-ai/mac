@@ -66,17 +66,21 @@ El agente **no necesita leer todo**. Solo sigue la cadena:
 
 ---
 
-## Anatomía de un buen `AGENTS.md`
+## Anatomía de un buen `AGENTS.md` (En teoría vs En este repo)
 
-Las secciones que más impactan el comportamiento del agente:
+En un repositorio tradicional sin un `playbook/` dedicado, estas son las secciones recomendadas:
 
-1. **Descripción del proyecto** — Una oración. El agente ancla todas sus decisiones ahí.
-2. **Comandos** — Con flags exactos. Ponerlos temprano — el agente los referencia continuamente.
-3. **Estructura del proyecto** — Dónde vive qué. Rutas relativas, nunca absolutas.
-4. **Convenciones y estilo** — Reglas concretas. Un ejemplo de código vale más que tres párrafos.
-5. **Límites en tres niveles** — Qué puede hacer sin preguntar, qué requiere confirmación, qué nunca hacer.
-6. **Contexto adicional** — Referencias a documentos que el agente puede consultar.
+1. **Descripción del proyecto**
+2. **Comandos** 
+3. **Estructura del proyecto** 
+4. **Convenciones y estilo** 
+5. **Límites en tres niveles** (permitido, preguntar, nunca)
+6. **Contexto adicional** 
 
+> **💡 Nota de implementación PEWMA:** Para evitar redundancia, en *este repositorio* la estructura del proyecto, los comandos y las convenciones viven en el `playbook/`. Nuestro `AGENTS.md` se reduce deliberadamente a:
+> - Descripción + Ritual obligatorio.
+> - Límites de acción en tres niveles (crítico).
+> - Índices para decirle al agente dónde buscar el resto.
 ### Reglas de escritura efectiva
 
 - **Brevedad.** ~150 líneas máximo. Los archivos largos entierran lo importante.

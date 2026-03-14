@@ -26,6 +26,15 @@ Tres historias simuladas que muestran cómo se implementa MaC a distintas escala
 * **[NovaTech](historias/novatech%20-%20relato%20empresa%20mediana.md)** — Empresa tech de 80 personas. Un manager implementa MaC como capa sobre JIRA y Sheets. Un año después, la gerencia lo pide para toda la empresa.
 
 
+## Desarrollo
+
+Este repositorio se gestiona con MaC y está preparado para trabajar con agentes IA.
+
+* [`AGENTS.md`](AGENTS.md) — Instrucciones para agentes IA: ritual obligatorio, tipos de trabajo y límites.
+* [`playbook/`](playbook/README.md) — Guías operativas del proyecto: convenciones de git, documentación, Docsify y configuración de agentes.
+* [`MaC/`](MaC/README.md) — Gestión del proyecto: sesiones de trabajo, log histórico y roadmap.
+
+
 ## Autor
 
 **Juan Pablo Gil**  
