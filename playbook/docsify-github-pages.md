@@ -178,16 +178,23 @@ Este es el único archivo que no es Markdown. Contiene el motor Docsify y el CSS
     }
   </script>
 
+  <!-- ==========================================
+       PLUGINS QUE DEBEN IR ANTES DE DOCSIFY
+       ========================================== -->
+  <!-- Mermaid: docsify-mermaid ANTES de docsify.min.js y docsify-themeable -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: false });</script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.min.js"></script>
+
+  <!-- ==========================================
+       MOTOR CORE DOCSIFY
+       ========================================== -->
   <!-- Motor de temas (debe ir ANTES de docsify.min.js) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   <!-- Motor Docsify -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   <!-- Plugin de búsqueda -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-
-  <!-- Mermaid: docsify-mermaid ANTES de mermaid.min.js -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 
   <!-- Plugins adicionales -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
@@ -279,7 +286,7 @@ GitHub Pages solo sirve archivos desde la carpeta configurada. Archivos fuera de
 
 ### Mermaid requiere orden específico de scripts
 
-Orden obligatorio: `docsify-mermaid.min.js` **antes** de `mermaid.min.js`, ambos **después** de `docsify.min.js`.
+Orden obligatorio contrario a lo intuitivo: `mermaid` inicializado con `startOnLoad: false`, luego `docsify-mermaid`, y todo esto **antes** de cargar el core de `docsify.min.js`. Si se hace al revés, Docsify inicializa antes que el plugin y bloquea el renderizado.
 
 ---
 
