@@ -5,68 +5,67 @@
   <title>MaC — Management as Code</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FUENTES: cambiar aquí para personalizar tipografía -->
+  <!-- FUENTES: PEWMA usa Merriweather -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 
-  <!-- TEMA BASE: docsify-themeable (las variables CSS lo personalizan) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <!-- TEMA BASE: docsify-themeable (Cambiado a Claro para coincidir con PEWMA) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
 
   <style>
     /* ============================================================
-       VARIABLES DE TEMA — editar esta sección para personalizar
-       Docsify-themeable expone estas variables CSS.
-       Referencia completa: https://jhildenbiddle.github.io/docsify-themeable
+       VARIABLES DE TEMA — PEWMA AI CORPORATE IDENTY
     ============================================================ */
     :root {
       /* Tipografía */
-      --base-font-family: 'Inter', -apple-system, sans-serif;
+      --base-font-family: 'Merriweather', 'Georgia', serif;
       --base-font-size: 16px;
-      --base-line-height: 1.75;
+      --base-line-height: 1.8;
 
-      /* Colores base */
-      --base-color: #d4d4d4;               /* texto principal */
-      --base-background-color: #0f0f0f;    /* fondo de contenido */
-      --heading-color: #f0f0f0;            /* títulos */
-      --heading-font-weight: 500;
+      /* Colores base (Extraídos de pewma.ai) */
+      --base-color: #2c3e50;               /* Azul pizarra oscuro para texto principal */
+      --base-background-color: #FDFDFD;    /* Fondo blanco roto */
+      --heading-color: #1a252f;            /* Títulos más oscuros */
+      --heading-font-weight: 700;
 
-      /* Links */
-      --link-color: #a78bfa;               /* color de acento — cambiar aquí */
-      --link-color--hover: #c4b5fd;
+      /* Links e Identidad corporativa */
+      --link-color: #D35400;               /* Terracota oscuro (acento corporativo) */
+      --link-color--hover: #e67e22;
       --link-text-decoration: none;
 
       /* Sidebar */
-      --sidebar-background: #141414;
-      --sidebar-border-color: #262626;
+      --sidebar-background: #f4f6f8;
+      --sidebar-border-color: #e2e8f0;
       --sidebar-width: 260px;
-      --sidebar-color: #a3a3a3;
-      --sidebar-name-color: #f0f0f0;
-      --sidebar-nav-link-color: #a3a3a3;
-      --sidebar-nav-link-color--active: #f0f0f0;
-      --sidebar-nav-link-font-weight--active: 500;
-      --sidebar-nav-link-border-color--active: #a78bfa; /* acento activo */
+      --sidebar-color: #596a7b;            /* Gris azulado texto secundario */
+      --sidebar-name-color: #2c3e50;
+      --sidebar-nav-link-color: #596a7b;
+      --sidebar-nav-link-color--active: #2c3e50;
+      --sidebar-nav-link-font-weight--active: 700;
+      --sidebar-nav-link-border-color--active: #D35400;
 
       /* Código */
       --code-font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      --code-background: #1a1a1a;
-      --code-color: #c4b5fd;
+      --code-background: #f1f5f9;
+      --code-color: #D35400;
       --code-block-border-radius: 6px;
 
       /* Blockquotes */
-      --blockquote-border-color: #a78bfa;
-      --blockquote-color: #a3a3a3;
+      --blockquote-border-color: #D35400;
+      --blockquote-color: #596a7b;
 
       /* Tablas */
-      --table-row-odd-background: #1a1a1a;
-      --table-row-even-background: #141414;
+      --table-row-odd-background: #f4f6f8;
+      --table-row-even-background: #FDFDFD;
 
       /* Búsqueda */
-      --search-input-background-color: #1a1a1a;
-      --search-input-border-color: #333;
-      --search-input-color: #d4d4d4;
+      --search-input-background-color: #ffffff;
+      --search-input-border-color: #e2e8f0;
+      --search-input-color: #2c3e50;
 
       /* Separadores */
-      --hr-border: 1px solid #262626;
+      --hr-border: 1px solid #e2e8f0;
     }
 
     /* ============================================================
@@ -110,7 +109,7 @@
       loadSidebar: true,                         // usa _sidebar.md
       subMaxLevel: 2,                            // niveles de TOC en sidebar
       homepage: 'README.md',                     // página de entrada (portada)
-      themeColor: '#a78bfa',                     // color de acento (progress bar)
+      themeColor: '#D35400',                     // color de acento corporativo (progress bar)
       notFoundPage: true,                        // página 404 automática
       auto2top: true,                            // scroll al inicio al cambiar de página
       search: {
@@ -126,7 +125,7 @@
       },
       // Mermaid: diagramas renderizados desde bloques ```mermaid
       mermaid: {
-        theme: 'dark',
+        theme: 'default',
       },
     }
   </script>
