@@ -22,8 +22,13 @@ Este archivo recopila ideas, sugerencias y posibles mejoras o iteraciones para l
 
 6. **El agente necesita saber que el playbook existe**, pero no leerlo entero al inicio de cada sesión. Solo debe consultarlo cuando va a ejecutar una tarea que lo requiera. Esto aún está pendiente de implementar en las reglas del agente.
 
-### Preguntas abiertas
+### Respuestas a preguntas abiertas (Actualizado 2026-03-14)
 
-- ¿Cómo compartir conocimiento operativo (playbooks) entre organizaciones o proyectos distintos?
-- ¿Debería el Método MaC formalizar el concepto de playbook como parte de su estructura recomendada?
-- ¿Cuál es el mecanismo para que un agente IA sepa *cuándo* consultar el playbook sin que se le diga explícitamente?
+~~- ¿Cómo compartir conocimiento operativo (playbooks) entre organizaciones o proyectos distintos?~~
+**Respuesta:** Como los playbooks son directorios con archivos Markdown planos, son 100% portables. Pueden versionarse como submódulos de Git (para compartirlos vivamente entre repositorios) o simplemente copiarse. El formato agnóstico e independiente en la carpeta `playbook/` asegura que no estén atados a la gestión interna de un solo proyecto.
+
+~~- ¿Debería el Método MaC formalizar el concepto de playbook como parte de su estructura recomendada?~~
+**Respuesta:** ¡Absolutamente! El Playbook es la materialización directa de la capa de **Políticas** (Pilar de Aprendizaje). Cuando el equipo enfrenta repetidamente fricciones técnicas (como el setup de Docsify, el comportamiento de Mermaid o convenciones de Markdown), usa el proceso **Consolidar** para transformar esas decisiones en el Playbook. Por tanto, el Playbook es el repositorio estructural del conocimiento operativo de MaC.
+
+~~- ¿Cuál es el mecanismo para que un agente IA sepa *cuándo* consultar el playbook sin que se le diga explícitamente?~~
+**Respuesta:** La inyección de contexto en las instrucciones base del Agente. En este repositorio lo resolvimos agregando una directriz explícita global en `AGENTS.md` bajo los *Tipos de Trabajo Operativo*: **"Antes de implementar un ítem, consultar el directorio playbook/ por si hay una guía relevante"**. El agente lee esta regla fundacional y de forma autónoma inspecciona y lee las lecciones consolidadas antes de actuar.
