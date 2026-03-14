@@ -162,6 +162,7 @@ Este es el único archivo que no es Markdown. Contiene el motor Docsify y el CSS
       homepage: 'README.md',                     // página de entrada (portada)
       themeColor: '#a78bfa',                     // color de acento (progress bar)
       notFoundPage: true,                        // página 404 automática
+      auto2top: true,                            // scroll al inicio al cambiar de página
       search: {
         placeholder: 'Buscar...',
         noData: 'Sin resultados.',
@@ -287,6 +288,10 @@ GitHub Pages solo sirve archivos desde la carpeta configurada. Archivos fuera de
 ### Mermaid requiere orden específico de scripts
 
 Orden obligatorio contrario a lo intuitivo: `mermaid` inicializado con `startOnLoad: false`, luego `docsify-mermaid`, y todo esto **antes** de cargar el core de `docsify.min.js`. Si se hace al revés, Docsify inicializa antes que el plugin y bloquea el renderizado.
+
+### Docsify mantiene el scroll entre páginas
+
+Por defecto, al hacer click en un enlace de otra página, Docsify la carga pero se queda en la misma posición de scroll en la que estabas. **Solución**: agregar `auto2top: true` en el config `window.$docsify` para forzar que empiece desde arriba.
 
 ---
 
