@@ -347,6 +347,6 @@ Estas preguntas cruzan capas y buscan inconsistencias, vacíos y patrones. Un hu
 
 ---
 
-→ **[Método MaC](metodo-mac.md)** — El modelo completo, procesos, cadencias y preguntas avanzadas por relación.
-→ **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
-→ **[Procesos entre capas](procesos-mac.md)** — Detalle de cada proceso con ejemplos por escala.
+- → **[Método MaC](metodo-mac.md)** — El modelo completo, procesos, cadencias y preguntas avanzadas por relación.
+- → **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
+- → **[Procesos entre capas](procesos-mac.md)** — Detalle de cada proceso con ejemplos por escala.

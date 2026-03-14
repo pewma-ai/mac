@@ -13,7 +13,7 @@ No importa si eres freelance o diriges un equipo de 80 personas. MaC escala porq
 
 ## Empieza aquí
 
-→ **[MaC para impacientes](mac-para-impacientes.md)** — Resumen de 2 minutos. Lo mínimo para empezar hoy.
+- → **[MaC para impacientes](mac-para-impacientes.md)** — Resumen de 2 minutos. Lo mínimo para empezar hoy.
 
 ## Documentación completa
 

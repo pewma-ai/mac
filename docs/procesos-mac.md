@@ -190,7 +190,7 @@ Cada proceso a continuación incluye ejemplos para tres escalas: una persona, un
 
 ---
 
-→ **[Método MaC](metodo-mac.md)** — El modelo completo, capas, cadencias y MaC Avanzado.
-→ **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
-→ **[Preguntas que responde MaC](preguntas-mac.md)** — Catálogo completo de preguntas por capa y preguntas automatizables.
+- → **[Método MaC](metodo-mac.md)** — El modelo completo, capas, cadencias y MaC Avanzado.
+- → **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
+- → **[Preguntas que responde MaC](preguntas-mac.md)** — Catálogo completo de preguntas por capa y preguntas automatizables.
 

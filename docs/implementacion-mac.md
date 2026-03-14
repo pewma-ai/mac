@@ -185,7 +185,7 @@ Tres organizaciones ficticias que ilustran cómo se implementa MaC a escalas dis
 
 ---
 
-→ **[MaC para gente impaciente](mac-para-impacientes.md)** — El resumen de 2 minutos.
-→ **[Método MaC](metodo-mac.md)** — La referencia completa: modelo, procesos, cadencias, preguntas.
-→ **[Procesos entre capas](procesos-mac.md)** — Detalle de cada proceso con ejemplos por escala.
-→ **[Preguntas que responde MaC](preguntas-mac.md)** — Catálogo completo de preguntas por capa.
+- → **[MaC para gente impaciente](mac-para-impacientes.md)** — El resumen de 2 minutos.
+- → **[Método MaC](metodo-mac.md)** — La referencia completa: modelo, procesos, cadencias, preguntas.
+- → **[Procesos entre capas](procesos-mac.md)** — Detalle de cada proceso con ejemplos por escala.
+- → **[Preguntas que responde MaC](preguntas-mac.md)** — Catálogo completo de preguntas por capa.

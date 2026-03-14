@@ -626,7 +626,7 @@ Estas preguntas extienden las [preguntas por capa](preguntas-mac.md) a las relac
 
 ---
 
-→ **[MaC para gente impaciente](mac-para-impacientes.md)** — Resumen de 2 minutos.
-→ **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
-→ **[Procesos entre capas](procesos-mac.md)** — Detalle de cada proceso con ejemplos por escala.
-→ **[Preguntas que responde MaC](preguntas-mac.md)** — Catálogo completo de preguntas por capa.
+- → **[MaC para gente impaciente](mac-para-impacientes.md)** — Resumen de 2 minutos.
+- → **[Implementación de MaC](implementacion-mac.md)** — Cómo empezar según tu escala.
+- → **[Procesos entre capas](procesos-mac.md)** — Detalle de cada proceso con ejemplos por escala.
+- → **[Preguntas que responde MaC](preguntas-mac.md)** — Catálogo completo de preguntas por capa.
