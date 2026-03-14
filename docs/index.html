@@ -122,6 +122,10 @@
         crossChapter: true,
         crossChapterText: true,
       },
+      // Mermaid: diagramas renderizados desde bloques ```mermaid
+      mermaid: {
+        theme: 'dark',
+      },
     }
   </script>
 
@@ -132,7 +136,11 @@
   <!-- Plugin de búsqueda -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
 
-  <!-- Plugins adicionales útiles y recomendados por el user -->
+  <!-- Mermaid: docsify-mermaid ANTES de mermaid.min.js -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+  <!-- Plugins adicionales -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
