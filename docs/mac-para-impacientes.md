@@ -38,16 +38,16 @@ graph LR
 
 **Tres pilares, ocho capas.** Cada capa responde una pregunta:
 
-| Pilar | Capa | Pregunta |
-|---|---|---|
-| **Estrategia** | Identidad | ¿Por qué existimos y qué nos diferencia? |
-| | Dirección | ¿Hacia dónde vamos? |
-| | Capacidad | ¿Con qué contamos realmente? |
-| **Acción** | Planificación | ¿Qué hacer a continuación? |
-| | Tareas | ¿Quién hace qué y cuándo? |
-| | Resultados | ¿Qué fue diferente a lo esperado? |
-| **Aprendizaje** | Decisiones | ¿Qué cambiamos a partir de lo que aprendimos? |
-| | Políticas | ¿Esto ya es una regla o seguimos caso a caso? |
+| Pilar           | Capa          | Pregunta                                      |
+| --------------- | ------------- | --------------------------------------------- |
+| **Estrategia**  | Identidad     | ¿Por qué existimos y qué nos diferencia?      |
+|                 | Dirección     | ¿Hacia dónde vamos?                           |
+|                 | Capacidad     | ¿Con qué contamos realmente?                  |
+| **Acción**      | Planificación | ¿Qué hacer a continuación?                    |
+|                 | Tareas        | ¿Quién hace qué y cuándo?                     |
+|                 | Resultados    | ¿Qué fue diferente a lo esperado?             |
+| **Aprendizaje** | Decisiones    | ¿Qué cambiamos a partir de lo que aprendimos? |
+|                 | Políticas     | ¿Esto ya es una regla o seguimos caso a caso? |
 
 ---
 
