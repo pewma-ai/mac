@@ -1,8 +1,44 @@
 # Management as Code (MaC)
 
-MaC es un sistema de gestión basado en documentos y procesos que se basa en el ciclo Acción → Aprendizaje siguiendo una estrategia común. El método MaC está disponible en
+MaC es un paradigma de gestión basado en documentos y procesos que articula el ciclo Acción → Aprendizaje siguiendo una estrategia común.
 
 🌐 https://pewma-ai.github.io/mac/
+
+## Instalación
+
+```bash
+npx @pewma-ai/mac init ./mac-mi-proyecto --name "Mi Proyecto"
+```
+
+Esto genera un repositorio MaC completo con `.mac/` (engine), estrategia, actividad, proyectos, procesos, scripts y playbook. [Más detalles →](docs/implementacion-mac.md)
+
+### Actualizar el engine
+
+```bash
+npx @pewma-ai/mac update .
+```
+
+### Directamente desde GitHub (sin npm)
+
+```bash
+npx github:pewma-ai/mac#v2 init ./mac-mi-proyecto --name "Mi Proyecto"
+```
+
+## Estructura del engine
+
+```
+engine/
+├── agentes/    → plantillas de agentes MaC (amigo, readme, destilado, janitor)
+├── scripts/    → janitors de mantenimiento (links, tags, broken links)
+├── templates/  → scaffolds para cada archivo del usuario
+├── metodo/     → documentación completa del método MaC
+└── version.json
+```
+
+```
+bin/
+└── mac.js      → CLI: init, update, version
+```
 
 ## Desarrollo
 
@@ -27,4 +63,3 @@ Este proyecto está respaldado por **PEWMA.AI**, un laboratorio de innovación d
 ## Licencia
 
 Este proyecto está licenciado bajo la licencia **Apache 2.0**. Ver el archivo [LICENSE](LICENSE) para más detalles.
-

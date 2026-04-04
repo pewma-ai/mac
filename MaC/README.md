@@ -15,10 +15,10 @@ Sistema de gestión basado en documentos y procesos que articula el ciclo Acció
 
 ## Sesiones
 
-* [Última sesión (2026-03-14)](./sesiones/sesion-2026-03-14.md) — Docsify en https://pewma-ai.github.io/mac/#/
+* [Última sesión (2026-04-03)](./sesiones/sesion-2026-04-03.md) — Engine MaC v2.0 distribuible vía npx.
 
 ### Sesiones anteriores (últimas tres)
 
+* [Sesión 2026-03-14](./sesiones/sesion-2026-03-14.md) — Playbook y Docsify.
 * [Sesión 2026-03-13](./sesiones/sesion-2026-03-13.md) — Lanzamiento de MaC v1.0.
 * [Sesión 2026-03-10](./sesiones/sesion-2026-03-10.md) — Refinamiento de procesos y tablas de definición.
-* [Sesión 2026-03-07](./sesiones/sesion-2026-03-07.md) — Definición de capas y terminología "Ensoñación".

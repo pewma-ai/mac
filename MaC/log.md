@@ -34,3 +34,10 @@
 - **Decisión:** `AGENTS.md` reemplaza a `.agents/` y `.cursorrules` como fuente de verdad para agentes IA.
 - Sitio web de MaC publicado con Docsify en https://pewma-ai.github.io/mac/ — identidad corporativa PEWMA (Merriweather, terracota `#D35400`, modo claro).
 - Las 3 preguntas abiertas sobre formalización del Playbook en el Método MaC fueron respondidas con la experiencia práctica de esta sesión.
+
+## 2026-04-03 - Engine MaC v2.0
+- Creación del engine distribuible (`.mac/`): 28 archivos en `engine/` (agentes, scripts, templates, método). Instalable vía `npx @pewma-ai/mac init`.
+- **Decisión:** Separar método (motor en `.mac/`) de implementación (archivos del usuario). Analogía: `.mac/` es a MaC lo que `.git/` es a Git.
+- **Decisión:** El engine soportará dos sabores: personal/org (actividad semanal, estrategia) y repositorio (sesiones, checklist). Solo el primero se implementa hoy.
+- Fuentes: patrones extraídos y generalizados de `mac-jpgil` (implementación personal de un mes). 4 agentes, 3 janitors Python, 17 templates.
+- CLI implementado con `init`, `update` y `version`. Sin dependencias externas (solo Node.js stdlib).
